@@ -14,20 +14,20 @@ lang: en
 
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
+timezone: Europe/Brussels
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy                          # the main title
+title: Azure Workshop                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: A hands-on intro to Azure services   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  A hands-on intro to Azure services
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://M-JM.github.io'
 
 github:
   username: github_username             # change to your github username
@@ -81,7 +81,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -136,6 +136,10 @@ collections:
   tabs:
     output: true
     sort_by: order
+
+plugins:
+  - jekyll-tabs
+
 
 defaults:
   - scope:
