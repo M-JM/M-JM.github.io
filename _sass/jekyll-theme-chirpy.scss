@@ -1,0 +1,75 @@
+/*!
+ * The styles for Jekyll theme Chirpy
+ *
+ * Chirpy v5.5.2 (https://github.com/cotes2020/jekyll-theme-chirpy)
+ * © 2019 Cotes Chung
+ * MIT Licensed
+ */
+
+@import
+  "colors/light-typography",
+  "colors/dark-typography",
+
+  "addon/module",
+  "addon/variables",
+  "variables-hook",
+  "addon/syntax",
+  "addon/commons",
+
+  "layout/home",
+  "layout/post",
+  "layout/tags",
+  "layout/archives",
+  "layout/categories",
+  "layout/category-tag";
+
+
+  
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.tab > * {
+  flex: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.tab > * > a {
+  display: block;
+  text-align: center;
+  padding: 9px 20px;
+  color: #999;
+  border-bottom: 2px solid transparent;
+  border-bottom-color: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: color .1s ease-in-out;
+  line-height: 20px;
+}
+
+.tab > .active > a {
+  color:green;
+  border-color: red;
+}
+
+.tab > li > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tab-content {
+  padding: 0;
+}
+
+.tab-content > li {
+  display: none;
+}
+.tab-content > li.active {
+  display: initial;
+}

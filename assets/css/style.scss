@@ -1,0 +1,61 @@
+---
+---
+
+/*
+  If the number of TAB files has changed, the following variable is required.
+  And it must be defined before `@import`.
+*/
+$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
+
+@import "{{ site.theme }}";
+
+/* append your custom style below */
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.tab > * {
+  flex: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.tab > * > a {
+  display: block;
+  text-align: center;
+  padding: 9px 20px;
+  color: #363535;
+  border-bottom: 2px solid transparent;
+  border-bottom-color: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: color .1s ease-in-out;
+  line-height: 20px;
+}
+
+.tab > .active > a {
+  color: green;
+  border-color: green;
+}
+
+.tab > li > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tab-content {
+  padding: 0;
+}
+
+.tab-content > li {
+  display: none;
+}
+.tab-content > li.active {
+  display: initial;
+}
