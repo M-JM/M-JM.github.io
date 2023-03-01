@@ -19,9 +19,9 @@ timezone: Europe/Brussels
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Azure Workshop                          # the main title
+title: Solita Cloud Workshop                          # the main title
 
-tagline: A hands-on intro to Azure services   # it will display as the sub-title
+tagline: A blog with guides for the workshops   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A hands-on intro to Azure services
@@ -30,7 +30,7 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://M-JM.github.io'
 
 github:
-  username: github_username             # change to your github username
+  username: jimmymiels             # change to your github username
 
 twitter:
   username: twitter_username            # change to your twitter username
@@ -38,12 +38,12 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
+  name: jimmy miels
   email: example@domain.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+   # - https://twitter.com/username      # change to your twitter homepage
+   # - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
